@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('sea.jpg');
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: wheat;
+    padding: 11px 21px;
+    font-size: 21px;
+}
+
+
+
+.menu a:before{
+    content: '';
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width:  0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+
+.menu a:hover::before{
+    width: 90%;
+
+}
+.register a{ 
+    text-decoration: none;
+    color: wheat;
+    padding: 11px 21px;
+    font-size: 21px;
+    background: indianred;
+    border-radius: 9px;
+    transition: 0.2s;
+}
+
+
+.register a:Hover{
+
+    background: transparent;
+    border: 1px solid indianred;
+
+}
+.text{
+    max-width: 651px;
+    position: absolute;
+    top: 51%;
+    left: 51%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: wheat;
+
+
+}
+
+.text span{
+    letter-spacing: 5.1px;
+}
+.text h1{
+    font-size: 3.2em;
+}
+.text a{
+    text-decoration: none;
+    background-color: indianred;
+    color: wheat;
+    padding: 10px 21px;
+    letter-spacing: 4px;
+    transition: 0.3s;
+}
+.text a:hover{
+
+    background: transparent;
+    border: 1px solid indianred;
+
+}
